@@ -19,8 +19,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 60px 68px 40px;
+  padding: 60px 38px 40px;
   width: 300px;
+}
+
+.login_title {
+  text-align: center;
 }
 
 .login__container--form {
@@ -37,6 +41,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .login__container--remember-me a {
@@ -63,6 +69,7 @@
 
 .login__container--register {
   font-size: 14px;
+  text-align: center;
 }
 
 .login__container--register a {

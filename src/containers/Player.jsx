@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
 import { getVideoSource } from '../actions';
-import NotFound from './NotFound';
+import NotFound from '../containers/NotFound';
 import '../assets/styles/components/Player.scss';
 
 const Player = props => {
@@ -19,7 +18,7 @@ const Player = props => {
 
   return hasPlaying ? (
     <div className="Player">
-      <video controls autoplay>
+      <video controls autoPlay>
         <source src={props.playing.source} type="video/mp4" />
       </video>
       <div className="Player-back">
